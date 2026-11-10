@@ -1,0 +1,4 @@
+mode,queries,recall_at_1,recall_at_3,mrr_at_3,median_retrieval_ms,p95_retrieval_ms
+lexical,30,0.9333,0.9667,0.9444,5.479,9.908
+vector,30,0.6,0.8,0.6722,5.686,10.258
+hybrid,30,0.8667,0.9333,0.8889,5.419,9.467

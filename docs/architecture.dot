@@ -1,0 +1,18 @@
+digraph G {
+ graph [rankdir=LR, bgcolor="white", pad="0.3", nodesep="0.45", ranksep="0.6", fontname="Arial"];
+ node [shape=box, style="rounded,filled", fillcolor="#EAF3FC", color="#49749F", fontname="Arial", fontsize=11, margin="0.18,0.12"];
+ edge [color="#67819F", arrowsize=.7, fontname="Arial", fontsize=9];
+ browser [label="Web dashboard\nHTML / JavaScript", fillcolor="#D9E9FF"];
+ auth [label="Authentication\nAPI-key → tenant / role / groups"];
+ api [label="FastAPI\nREST API / health / metrics", fillcolor="#D9E9FF"];
+ ingest [label="Ingestion service\nTXT / MD / text PDF\nnormalize → chunk"];
+ embed [label="Embedding adapter\nLocal hash baseline OR\nOpenAI embedding"];
+ store [label="SQLite knowledge store\nFTS5 + vectors JSON\nmetadata + ACL + audit", fillcolor="#FFF1D6"];
+ search [label="Permission-aware retrieval\nFTS BM25 + vector cosine\nweighted reciprocal rank fusion"];
+ answer [label="Answer engine\nExtractive cited OR\nOpenAI cited generation"];
+ observe [label="Telemetry\nPrometheus metrics + audit"];
+ browser -> api [label=" HTTPS (via TLS proxy in prod)"];
+ api -> auth; api -> ingest; ingest -> embed; embed -> store; ingest -> store;
+ api -> search; search -> store; search -> embed; search -> answer; answer -> api;
+ api -> observe;
+}

@@ -1,0 +1,491 @@
+{
+  "benchmark": "synthetic_policy_retrieval_v1",
+  "seed": "fixed_dataset_no_randomness",
+  "embedding": "local deterministic hash features, not neural semantic embedding",
+  "dataset_documents": 30,
+  "dataset_queries": 30,
+  "python": "3.13.5",
+  "measurement": "Single-process end-to-end retrieval, excludes ingestion, HTTP, LLM calls, and user-facing answer quality",
+  "results": {
+    "lexical": {
+      "queries": 30,
+      "recall_at_1": 0.9333,
+      "recall_at_3": 0.9667,
+      "mrr_at_3": 0.9444,
+      "median_retrieval_ms": 5.479,
+      "p95_retrieval_ms": 9.908,
+      "per_query": [
+        {
+          "query": "How many days do we keep database backups?",
+          "relevant_document": "Backups",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What is the tier one recovery time objective?",
+          "relevant_document": "Recovery",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How often are privileged permissions reviewed?",
+          "relevant_document": "Access",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What must happen before providing new hire equipment?",
+          "relevant_document": "Onboarding",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When is the travel reimbursement form due?",
+          "relevant_document": "Expenses",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How quickly should urgent security incidents be escalated?",
+          "relevant_document": "Security",
+          "rank_at_3": 3
+        },
+        {
+          "query": "How long is support ticket history kept?",
+          "relevant_document": "Retention",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Who approves large software purchasing requests?",
+          "relevant_document": "Procurement",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Which encryption standard protects stored records?",
+          "relevant_document": "Encryption",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What approvals do production deployments require?",
+          "relevant_document": "Change",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Is security awareness training required each year?",
+          "relevant_document": "Training",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What label is required for sensitive confidential documents?",
+          "relevant_document": "Classification",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What should happen before adding a data handling supplier?",
+          "relevant_document": "Vendor",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What availability percentage does our service target?",
+          "relevant_document": "Availability",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How frequently are service secrets rotated?",
+          "relevant_document": "Passwords",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What is the response SLA for priority two tickets?",
+          "relevant_document": "Tickets",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When does the compliance committee meet?",
+          "relevant_document": "Compliance",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Who receives the quarterly finance forecasts?",
+          "relevant_document": "Finance",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When does the asset inventory get reconciled?",
+          "relevant_document": "Inventory",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What automated checks must pass before code merges?",
+          "relevant_document": "Engineering",
+          "rank_at_3": null
+        },
+        {
+          "query": "What time does the engineer on call handover happen?",
+          "relevant_document": "Operations",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How far ahead does legal review auto renewing contracts?",
+          "relevant_document": "Legal",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What happens before a feature enters roadmap ranking?",
+          "relevant_document": "Product",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How soon must privacy access requests be acknowledged?",
+          "relevant_document": "Privacy",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Who reviews press releases before publishing?",
+          "relevant_document": "Marketing",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When does a visitor pass become invalid?",
+          "relevant_document": "Facilities",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Who approves enterprise discounts above 20 percent?",
+          "relevant_document": "Sales",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How often do full regression suites run?",
+          "relevant_document": "Quality",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How early should staff submit leave requests?",
+          "relevant_document": "HR",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When is the reporting dashboard refreshed?",
+          "relevant_document": "Analytics",
+          "rank_at_3": 1
+        }
+      ]
+    },
+    "vector": {
+      "queries": 30,
+      "recall_at_1": 0.6,
+      "recall_at_3": 0.8,
+      "mrr_at_3": 0.6722,
+      "median_retrieval_ms": 5.686,
+      "p95_retrieval_ms": 10.258,
+      "per_query": [
+        {
+          "query": "How many days do we keep database backups?",
+          "relevant_document": "Backups",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What is the tier one recovery time objective?",
+          "relevant_document": "Recovery",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How often are privileged permissions reviewed?",
+          "relevant_document": "Access",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What must happen before providing new hire equipment?",
+          "relevant_document": "Onboarding",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When is the travel reimbursement form due?",
+          "relevant_document": "Expenses",
+          "rank_at_3": null
+        },
+        {
+          "query": "How quickly should urgent security incidents be escalated?",
+          "relevant_document": "Security",
+          "rank_at_3": null
+        },
+        {
+          "query": "How long is support ticket history kept?",
+          "relevant_document": "Retention",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Who approves large software purchasing requests?",
+          "relevant_document": "Procurement",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Which encryption standard protects stored records?",
+          "relevant_document": "Encryption",
+          "rank_at_3": 3
+        },
+        {
+          "query": "What approvals do production deployments require?",
+          "relevant_document": "Change",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Is security awareness training required each year?",
+          "relevant_document": "Training",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What label is required for sensitive confidential documents?",
+          "relevant_document": "Classification",
+          "rank_at_3": null
+        },
+        {
+          "query": "What should happen before adding a data handling supplier?",
+          "relevant_document": "Vendor",
+          "rank_at_3": 3
+        },
+        {
+          "query": "What availability percentage does our service target?",
+          "relevant_document": "Availability",
+          "rank_at_3": null
+        },
+        {
+          "query": "How frequently are service secrets rotated?",
+          "relevant_document": "Passwords",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What is the response SLA for priority two tickets?",
+          "relevant_document": "Tickets",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When does the compliance committee meet?",
+          "relevant_document": "Compliance",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Who receives the quarterly finance forecasts?",
+          "relevant_document": "Finance",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When does the asset inventory get reconciled?",
+          "relevant_document": "Inventory",
+          "rank_at_3": 3
+        },
+        {
+          "query": "What automated checks must pass before code merges?",
+          "relevant_document": "Engineering",
+          "rank_at_3": null
+        },
+        {
+          "query": "What time does the engineer on call handover happen?",
+          "relevant_document": "Operations",
+          "rank_at_3": 3
+        },
+        {
+          "query": "How far ahead does legal review auto renewing contracts?",
+          "relevant_document": "Legal",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What happens before a feature enters roadmap ranking?",
+          "relevant_document": "Product",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How soon must privacy access requests be acknowledged?",
+          "relevant_document": "Privacy",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Who reviews press releases before publishing?",
+          "relevant_document": "Marketing",
+          "rank_at_3": 3
+        },
+        {
+          "query": "When does a visitor pass become invalid?",
+          "relevant_document": "Facilities",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Who approves enterprise discounts above 20 percent?",
+          "relevant_document": "Sales",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How often do full regression suites run?",
+          "relevant_document": "Quality",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How early should staff submit leave requests?",
+          "relevant_document": "HR",
+          "rank_at_3": 2
+        },
+        {
+          "query": "When is the reporting dashboard refreshed?",
+          "relevant_document": "Analytics",
+          "rank_at_3": null
+        }
+      ]
+    },
+    "hybrid": {
+      "queries": 30,
+      "recall_at_1": 0.8667,
+      "recall_at_3": 0.9333,
+      "mrr_at_3": 0.8889,
+      "median_retrieval_ms": 5.419,
+      "p95_retrieval_ms": 9.467,
+      "per_query": [
+        {
+          "query": "How many days do we keep database backups?",
+          "relevant_document": "Backups",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What is the tier one recovery time objective?",
+          "relevant_document": "Recovery",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How often are privileged permissions reviewed?",
+          "relevant_document": "Access",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What must happen before providing new hire equipment?",
+          "relevant_document": "Onboarding",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When is the travel reimbursement form due?",
+          "relevant_document": "Expenses",
+          "rank_at_3": 3
+        },
+        {
+          "query": "How quickly should urgent security incidents be escalated?",
+          "relevant_document": "Security",
+          "rank_at_3": null
+        },
+        {
+          "query": "How long is support ticket history kept?",
+          "relevant_document": "Retention",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Who approves large software purchasing requests?",
+          "relevant_document": "Procurement",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Which encryption standard protects stored records?",
+          "relevant_document": "Encryption",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What approvals do production deployments require?",
+          "relevant_document": "Change",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Is security awareness training required each year?",
+          "relevant_document": "Training",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What label is required for sensitive confidential documents?",
+          "relevant_document": "Classification",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What should happen before adding a data handling supplier?",
+          "relevant_document": "Vendor",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What availability percentage does our service target?",
+          "relevant_document": "Availability",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How frequently are service secrets rotated?",
+          "relevant_document": "Passwords",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What is the response SLA for priority two tickets?",
+          "relevant_document": "Tickets",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When does the compliance committee meet?",
+          "relevant_document": "Compliance",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Who receives the quarterly finance forecasts?",
+          "relevant_document": "Finance",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When does the asset inventory get reconciled?",
+          "relevant_document": "Inventory",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What automated checks must pass before code merges?",
+          "relevant_document": "Engineering",
+          "rank_at_3": null
+        },
+        {
+          "query": "What time does the engineer on call handover happen?",
+          "relevant_document": "Operations",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How far ahead does legal review auto renewing contracts?",
+          "relevant_document": "Legal",
+          "rank_at_3": 1
+        },
+        {
+          "query": "What happens before a feature enters roadmap ranking?",
+          "relevant_document": "Product",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How soon must privacy access requests be acknowledged?",
+          "relevant_document": "Privacy",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Who reviews press releases before publishing?",
+          "relevant_document": "Marketing",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When does a visitor pass become invalid?",
+          "relevant_document": "Facilities",
+          "rank_at_3": 1
+        },
+        {
+          "query": "Who approves enterprise discounts above 20 percent?",
+          "relevant_document": "Sales",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How often do full regression suites run?",
+          "relevant_document": "Quality",
+          "rank_at_3": 1
+        },
+        {
+          "query": "How early should staff submit leave requests?",
+          "relevant_document": "HR",
+          "rank_at_3": 1
+        },
+        {
+          "query": "When is the reporting dashboard refreshed?",
+          "relevant_document": "Analytics",
+          "rank_at_3": 3
+        }
+      ]
+    }
+  }
+}
